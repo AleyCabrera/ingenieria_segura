@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <script src="./scripts/script.js" defer></script>
+    <script src="./js/script.js" defer></script>
     <title>Ingeniería Segura</title>
 </head>
+
 <body>
     <header>
         <!-- NAVBAR -->
         <nav class="navbar" id="navbar">
             <div class="container navbar-container">
                 <div class="logo">
-                    <span class="logo-icon">⚙</span>
-                    <span class="logo-text">Ingeniería<span class="logo-dot">Segura</span></span>
+                    <a href="index.html">
+                        <span class="logo-icon">⚙</span>
+                        <span class="logo-text">Ingeniería<span class="logo-dot">Segura</span></span>
+                    </a>
                 </div>
-        
+
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="#hero" class="nav-link active">Inicio</a></li>
-                    <li><a href="#categories" class="nav-link">Artículos</a></li>
-                    <li><a href="#learning-paths" class="nav-link">Rutas</a></li>
-                    <li><a href="#projects" class="nav-link">Proyectos</a></li>
-                    <li><a href="#about" class="nav-link">Sobre el Blog</a></li>
+                    <li><a href="index.html#hero" class="nav-link active">Inicio</a></li>
+                    <li><a href="index.html#categories" class="nav-link">Artículos</a></li>
+                    <li><a href="index.html#learning-paths" class="nav-link">Rutas</a></li>
+                    <li><a href="index.html#projects" class="nav-link">Proyectos</a></li>
+                    <li><a href="index.html#about" class="nav-link">Sobre el Blog</a></li>
                 </ul>
-        
+
                 <div class="nav-actions">
                     <button class="search-btn" id="searchBtn" aria-label="Buscar">🔍</button>
                     <button class="theme-btn" id="themeBtn" aria-label="Cambiar tema">🌙</button>
@@ -37,25 +41,22 @@
             </div>
         </nav>
     </header>
-    
+
     <main>
         <!-- HERO SECTION - Terminal 2.0 Profesional -->
         <section class="hero" id="hero">
-            <!-- Fondo con efectos -->
             <div class="hero-bg">
                 <div class="hero-grid"></div>
                 <div class="hero-glow"></div>
             </div>
-        
+
             <div class="container hero-container">
                 <div class="hero-content">
-                    <!-- Badge superior -->
                     <div class="hero-badge">
                         <span class="badge-dot"></span>
                         <span class="badge-text">v2.0 · En producción</span>
                     </div>
-        
-                    <!-- Terminal Mejorada -->
+
                     <div class="terminal-window">
                         <div class="terminal-header">
                             <div class="terminal-dots">
@@ -71,7 +72,6 @@
                             </span>
                         </div>
                         <div class="terminal-body" id="terminalBody">
-                            <!-- Línea 1 -->
                             <div class="terminal-line">
                                 <span class="terminal-prompt">❯</span>
                                 <span class="terminal-command">cat welcome.txt</span>
@@ -86,8 +86,7 @@
                                 <span class="output-text">│ • IoT • Automatización │</span>
                                 <span class="output-text">└─────────────────────────────────────────────┘</span>
                             </div>
-        
-                            <!-- Línea 2 -->
+
                             <div class="terminal-line">
                                 <span class="terminal-prompt">❯</span>
                                 <span class="terminal-command">./contenido --list</span>
@@ -96,79 +95,51 @@
                                 <span class="output-text">📄 Artículos técnicos · Rutas de aprendizaje</span>
                                 <span class="output-text">📁 Proyectos · Recursos · Laboratorios</span>
                             </div>
-        
-                            <!-- Línea 3 - Con cursor -->
+
                             <div class="terminal-line">
                                 <span class="terminal-prompt">❯</span>
                                 <span class="terminal-command cursor-blink">./empezar</span>
                             </div>
-        
-                            <!-- Botones -->
+
                             <div class="terminal-buttons">
-                                <a href="#categories" class="btn btn-terminal-primary">
+                                <a href="index.html#categories" class="btn btn-terminal-primary">
                                     <span>Explorar Artículos</span>
                                     <span class="btn-arrow">→</span>
                                 </a>
-                                <a href="#projects" class="btn btn-terminal-secondary">
+                                <a href="index.html#projects" class="btn btn-terminal-secondary">
                                     <span>Ver Proyectos</span>
                                     <span class="btn-arrow">→</span>
                                 </a>
                             </div>
                         </div>
                     </div>
-        
-                    <!-- Stats -->
-                    <div class="hero-stats">
-                        <div class="hero-stat">
-                            <span class="stat-number">32+</span>
-                            <span class="stat-label">Artículos</span>
-                        </div>
-                        <div class="hero-stat-divider"></div>
-                        <div class="hero-stat">
-                            <span class="stat-number">3</span>
-                            <span class="stat-label">Rutas</span>
-                        </div>
-                        <div class="hero-stat-divider"></div>
-                        <div class="hero-stat">
-                            <span class="stat-number">∞</span>
-                            <span class="stat-label">Aprendizaje</span>
-                        </div>
+
+                    <div class="hero-stats" id="heroStats">
+                        <!-- Stats generados por JavaScript -->
                     </div>
                 </div>
-        
-                <!-- Ilustración mejorada -->
+
                 <div class="hero-illustration">
                     <div class="illustration-container">
-                        <!-- Anillo exterior -->
                         <div class="ring ring-1"></div>
                         <div class="ring ring-2"></div>
                         <div class="ring ring-3"></div>
-        
-                        <!-- Nodos -->
                         <div class="node node-1"></div>
                         <div class="node node-2"></div>
                         <div class="node node-3"></div>
                         <div class="node node-4"></div>
                         <div class="node node-5"></div>
                         <div class="node node-6"></div>
-        
-                        <!-- Conexiones -->
                         <div class="connection c1"></div>
                         <div class="connection c2"></div>
                         <div class="connection c3"></div>
                         <div class="connection c4"></div>
                         <div class="connection c5"></div>
-        
-                        <!-- Centro -->
                         <div class="center-icon">⚙</div>
-        
-                        <!-- Iconos flotantes -->
                         <div class="icon-cloud">☁</div>
                         <div class="icon-server">🖥</div>
                         <div class="icon-lock">🔒</div>
                         <div class="icon-signal">📡</div>
-        
-                        <!-- Partículas -->
                         <div class="particle p1"></div>
                         <div class="particle p2"></div>
                         <div class="particle p3"></div>
@@ -179,7 +150,7 @@
             </div>
         </section>
 
-        <!-- CATEGORÍAS PRINCIPALES -->
+        <!-- CATEGORÍAS PRINCIPALES - ENLACES FUNCIONALES -->
         <section class="categories" id="categories">
             <div class="container">
                 <div class="section-header">
@@ -188,49 +159,15 @@
                         ls -l /areas-de-conocimiento
                     </h2>
                     <div class="section-divider"></div>
+                    <a href="categories.html" class="section-link">Ver todas →</a> <!-- ✅ CAMBIO 1: AGREGADO -->
                 </div>
-                <div class="categories-grid">
-                    <div class="category-card">
-                        <div class="category-icon">💻</div>
-                        <h3 class="category-title">Programación</h3>
-                        <p class="category-description">Backend, APIs, automatización, estructuras de datos y algoritmos.</p>
-                        <span class="category-count">📄 32 artículos</span>
-                    </div>
-                    <div class="category-card">
-                        <div class="category-icon">🌐</div>
-                        <h3 class="category-title">Redes</h3>
-                        <p class="category-description">TCP/IP, VLAN, switching, CCNA y arquitectura de red.</p>
-                        <span class="category-count">📄 24 artículos</span>
-                    </div>
-                    <div class="category-card">
-                        <div class="category-icon">☁</div>
-                        <h3 class="category-title">Sistemas & Cloud</h3>
-                        <p class="category-description">Linux, virtualización, Bash, Python y fundamentos de cloud.</p>
-                        <span class="category-count">📄 18 artículos</span>
-                    </div>
-                    <div class="category-card">
-                        <div class="category-icon">📡</div>
-                        <h3 class="category-title">Electrónica & IoT</h3>
-                        <p class="category-description">Circuitos, PCB, microcontroladores, ESP32 y sensores.</p>
-                        <span class="category-count">📄 15 artículos</span>
-                    </div>
-                    <div class="category-card">
-                        <div class="category-icon">🔒</div>
-                        <h3 class="category-title">Ciberseguridad</h3>
-                        <p class="category-description">Pentesting, vulnerabilidades, ISO 27001 y seguridad en desarrollo.</p>
-                        <span class="category-count">📄 20 artículos</span>
-                    </div>
-                    <div class="category-card">
-                        <div class="category-icon">📋</div>
-                        <h3 class="category-title">Ingeniería</h3>
-                        <p class="category-description">Metodologías ágiles, documentación, electrónica y automatización.</p>
-                        <span class="category-count">📄 10 artículos</span>
-                    </div>
+                <div class="categories-grid" id="categoriesGrid">
+                    <!-- Generado por JavaScript -->
                 </div>
             </div>
         </section>
 
-        <!-- ARTÍCULOS DESTACADOS -->
+        <!-- ARTÍCULOS DESTACADOS - ENLACES FUNCIONALES -->
         <section class="featured-articles">
             <div class="container">
                 <div class="section-header">
@@ -238,39 +175,11 @@
                         <span class="terminal-prompt-small">$</span>
                         cat /articulos/destacados
                     </h2>
-                    <a href="#" class="section-link">Ver todos →</a>
+                    <a href="all-posts.html" class="section-link">Ver todos →</a>
+                    <!-- ✅ CAMBIO 2: categories.html → all-posts.html -->
                 </div>
-                <div class="articles-grid">
-                    <article class="article-card">
-                        <div class="article-image" style="background: linear-gradient(135deg, #0F172A, #1E293B);">
-                            <div class="article-image-accent"></div>
-                            <div class="article-image-icon">🌐</div>
-                        </div>
-                        <span class="article-category">Redes</span>
-                        <h3 class="article-title">TCP/IP explicado desde cero para ingenieros</h3>
-                        <p class="article-excerpt">Fundamentos del protocolo que mueve internet con ejemplos prácticos.</p>
-                        <a href="#" class="article-link">Leer artículo →</a>
-                    </article>
-                    <article class="article-card">
-                        <div class="article-image" style="background: linear-gradient(135deg, #1E293B, #0F172A);">
-                            <div class="article-image-accent"></div>
-                            <div class="article-image-icon">🔒</div>
-                        </div>
-                        <span class="article-category">Ciberseguridad</span>
-                        <h3 class="article-title">Guía práctica de pentesting en entornos cloud</h3>
-                        <p class="article-excerpt">Metodologías y herramientas para evaluar la seguridad en la nube.</p>
-                        <a href="#" class="article-link">Leer artículo →</a>
-                    </article>
-                    <article class="article-card">
-                        <div class="article-image" style="background: linear-gradient(135deg, #0F172A, #1E293B);">
-                            <div class="article-image-accent"></div>
-                            <div class="article-image-icon">📡</div>
-                        </div>
-                        <span class="article-category">IoT</span>
-                        <h3 class="article-title">Sistema de monitoreo con ESP32 y Node-RED</h3>
-                        <p class="article-excerpt">Construye una solución completa de IoT paso a paso.</p>
-                        <a href="#" class="article-link">Leer artículo →</a>
-                    </article>
+                <div class="articles-grid" id="featuredArticles">
+                    <!-- Generado por JavaScript -->
                 </div>
             </div>
         </section>
@@ -390,8 +299,8 @@
                             </div>
                         </div>
                         <div class="project-info">
-                            <p class="project-description">Sistema completo de monitoreo de temperatura y humedad para cadena de
-                                frío con ESP32 y MQTT.</p>
+                            <p class="project-description">Sistema completo de monitoreo de temperatura y humedad para
+                                cadena de frío con ESP32 y MQTT.</p>
                             <div class="project-tech">
                                 <span class="tech-badge">ESP32</span>
                                 <span class="tech-badge">MQTT</span>
@@ -409,8 +318,8 @@
                             </div>
                         </div>
                         <div class="project-info">
-                            <p class="project-description">Dashboard interactivo para monitoreo de eventos de seguridad y
-                                análisis de logs en entornos IT/OT.</p>
+                            <p class="project-description">Dashboard interactivo para monitoreo de eventos de seguridad
+                                y análisis de logs en entornos IT/OT.</p>
                             <div class="project-tech">
                                 <span class="tech-badge">React</span>
                                 <span class="tech-badge">Node.js</span>
@@ -423,7 +332,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- SOBRE EL BLOG -->
         <section class="about-blog" id="about">
             <div class="container">
@@ -433,13 +342,13 @@
                         <span class="about-command">cat /about</span>
                     </div>
                     <h2 class="about-title">¿Por qué existe Ingeniería Segura?</h2>
-                    <p class="about-text">Ingeniería Segura nace como un espacio para documentar el aprendizaje continuo en
-                        ingeniería, desarrollo de software, redes, ciberseguridad e IoT.</p>
-                    <p class="about-text">El objetivo es compartir conocimiento técnico de forma estructurada y basada en
-                        fuentes confiables, aplicando buenas prácticas de seguridad desde el inicio.</p>
+                    <p class="about-text">Ingeniería Segura nace como un espacio para documentar el aprendizaje continuo
+                        en ingeniería, desarrollo de software, redes, ciberseguridad e IoT.</p>
+                    <p class="about-text">El objetivo es compartir conocimiento técnico de forma estructurada y basada
+                        en fuentes confiables, aplicando buenas prácticas de seguridad desde el inicio.</p>
                     <div class="about-stats">
                         <div class="stat-item">
-                            <span class="stat-number">10+</span>
+                            <span class="stat-number" id="postCount">0</span>
                             <span class="stat-label">Artículos Publicados</span>
                         </div>
                         <div class="stat-item">
@@ -477,19 +386,16 @@
                 <div class="footer-column">
                     <h4 class="footer-column-title">Navegación</h4>
                     <ul class="footer-links">
-                        <li><a href="#hero">Inicio</a></li>
-                        <li><a href="#categories">Artículos</a></li>
-                        <li><a href="#learning-paths">Rutas</a></li>
-                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="index.html#hero">Inicio</a></li>
+                        <li><a href="index.html#categories">Artículos</a></li>
+                        <li><a href="index.html#learning-paths">Rutas</a></li>
+                        <li><a href="index.html#projects">Proyectos</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h4 class="footer-column-title">Contenido</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Programación</a></li>
-                        <li><a href="#">Redes</a></li>
-                        <li><a href="#">Ciberseguridad</a></li>
-                        <li><a href="#">IoT</a></li>
+                    <h4 class="footer-column-title">Categorías</h4>
+                    <ul class="footer-links" id="footerCategories">
+                        <!-- Generado por JavaScript -->
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -502,9 +408,14 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>⚙ Ingeniería Segura · v.1.0 &copy; 2026 · Construido con ❤️ y ☕</p>
+                <p>⚙ Ingeniería Segura · v.2.0 &copy; 2026 · Construido con ❤️ y ☕</p>
             </div>
         </div>
     </footer>
+
+    <script src="./js/posts-data.js"></script>
+    <script src="./js/script.js"></script>
+    
 </body>
+
 </html>
